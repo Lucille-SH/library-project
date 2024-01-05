@@ -1,0 +1,116 @@
+:root {
+  --box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+body {
+  margin: 100px 0;
+  background-color: #e9f7f8;
+  font-family: "Gill Sans Extrabold", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 16px;
+  margin: 10px auto;
+  font-size: 40px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 3px #dcc9af;
+}
+
+h2 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: #062d26;
+  margin-bottom: 35px;
+  font-style: italic;
+}
+
+img {
+  display: block;
+  margin: 20px auto;
+  border: 3px solid #062d26;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+  max-width: 100%;
+}
+
+button {
+  display: block;
+  margin: 40px auto;
+  padding: 22px 45px;
+  font-size: 20px;
+  font-family: "Gill Sans Extrabold", sans-serif;
+  color: white;
+  background-color: #1a6069;
+  border: 1px solid #1a6069;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+
+button:hover {
+  color: #1a6069;
+  background-color: white;
+}
+
+hr {
+  border-width: 1px;
+  border-color: rgba(6, 45, 38, 0.3);
+  border-style: solid;
+  border-radius: 2px;
+  margin: 40px;
+}
+
+.container {
+  max-width: 800px;
+  min-width: 394px;
+  margin: 0 auto;
+  padding: 30px 60px;
+  background: linear-gradient(to top, #dfe9f3 0%, white 100%);
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+}
+
+.mainText {
+  font-size: 16px;
+  line-height: 31px;
+  text-align: left;
+}
+
+.built-by {
+  padding: 10px;
+  font-style: italic;
+  color: #062d26;
+  text-align: center;
+  font-size: 14px;
+}
+
+.wikipedia {
+  display: block;
+  padding-top: 10px;
+  text-align: left;
+  font-size: 14px;
+  font-style: italic;
+  color: #1a6069;
+  text-decoration: none;
+  max-width: fit-content;
+}
+
+.wikipedia:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.linkedin {
+  color: #055c4c;
+  text-decoration: none;
+}
+
+.linkedin:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

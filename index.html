@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>📚 The Library</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>📚 The Library</h1>
+      <h2>
+        How did libraries <strong>begin</strong>...and how have they
+        <strong>developed since</strong>?
+      </h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/099/436/original/library_image.jpeg?1696766724"
+        alt="books on shelves" />
+      <hr />
+      <p class="mainText">
+        The history of libraries began with the first efforts to organize
+        collections of documents. The first libraries consisted of archives of
+        the earliest form of writing—the clay tablets in cuneiform script
+        discovered in Sumer, some dating back to 2600 BC. <br /><br />Private or
+        personal libraries made up of written books appeared in classical Greece
+        in the 5th century BC. In the 6th century, at the very close of the
+        Classical period, the great librart of the Mediterranean world remained
+        those of Constantinople and Alexandria.
+        <br />
+        <br />
+        Now, libraries may provide physical or digital access to material, and
+        may be a physical location or a virtual space, or both.
+        <br /><br />
+        A libraries collection can include books, periodicals, newspapers,
+        manuscripts, films, maps, prints, documents, microform, CDs, cassettes,
+        videotapes, DVDs, Blu-ray Discs, e-books, audiobooks, databases, table
+        games, video games and other formats. <br /><br />Libraries range widely
+        in size, up to millions of items. <br /><br />
+        Libraries often provide quiet areas for studying, and they also often
+        offer common areas to facilitate group study and collaboration.
+      </p>
+      <a
+        href="https://en.wikipedia.org/wiki/Library"
+        target="_blank"
+        class="wikipedia">
+        * Learn More at Wikipedia
+      </a>
+      <hr />
+      <button>Find a Library Near You</button>
+      <p class="built-by">
+        This page was built by
+        <a
+          href="https://www.linkedin.com/in/lucilleshankland/"
+          target="_blank"
+          class="linkedin">
+          Lucille Shankland
+        </a>
+      </p>
+    </div>
+    <script>
+      function findLibrary() {
+        let city = prompt("What city do you live in?");
+        let firstName = prompt("What is your first name?");
+        let email = prompt("What is your email address?");
+
+        if (city.length > 0) {
+          alert(
+            "Thank you " +
+              firstName +
+              ", we'll be in touch with a list of Libraries near " +
+              city +
+              "!"
+          );
+        }
+      }
+      let button = document.querySelector("button");
+      button.addEventListener("click", findLibrary);
+    </script>
+  </body>
+</html>
